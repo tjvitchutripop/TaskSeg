@@ -43,7 +43,7 @@ with torch.no_grad():
 sigmoid_func = torch.nn.Sigmoid()
 pred_seg = sigmoid_func(raw_pred["out"].squeeze()).cpu().numpy()
 
-# visualize segmentation and observation overlayed
+# visualize segmentation and observation overlaid
 plt.imshow(obs_1)
 plt.imshow(pred_seg, alpha=0.5)
 plt.show()
